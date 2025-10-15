@@ -1,0 +1,20 @@
+<div class="flex w-screen h-screen justify-center bg-[#ECF4FE]">
+    <div class="shadow-xl w-[50%] h-[600px] bg-white rounded-b-lg">
+        <div class="flex flex-col items-start h-[100%] overflow-hidden">
+            <form 
+                class="relative h-[100%] w-[100%] flex flex-col items-center"
+                [formGroup]="profileForm"
+                (ngSubmit)="onSubmit()"
+            >
+                <app-field class="w-[100%]" label="Username" fieldName="username" [control]="profileForm.controls['fieldUsername']" [value]="'admin'"></app-field>
+                <app-field class="w-[100%]" label="Password" fieldName="password" [control]="profileForm.controls['fieldPassword']" [value]="'●●●●●●●●'"></app-field>
+                <app-field class="w-[100%]" label="Website" fieldName="website" [control]="profileForm.controls['fieldWebsite']" [value]="'https://www.myWebsite.com/'"></app-field>
+                <input 
+                    type="submit"
+                    class="absolute bottom-10 mt-5 text-lg bg-[#95C9EE] hover:bg-[#b3d4ec] text-white cursor-pointer py-3 px-6 rounded-md"
+                    value="Save changes"
+                >
+            </form>
+        </div>
+    </div>
+</div>

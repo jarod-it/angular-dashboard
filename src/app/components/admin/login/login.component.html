@@ -1,0 +1,42 @@
+<div class="flex w-screen h-screen justify-center items-center bg-[#ECF4FE]">
+  <div class="shadow-xl w-[400px] h-[600px] bg-white rounded-lg mb-[250px]">
+    <div
+      class="flex justify-center items-center text-4xl text-white h-2/6 bg-[url('assets/img/bg-login.jpg')] rounded-t-lg"
+    >
+      Login
+    </div>
+    <form
+      [formGroup]="loginForm"
+      (ngSubmit)="onSubmit()"
+      class="flex flex-col items-center justify-evenly w-6/6 h-4/6"
+    >
+      <div class="flex flex-col justify-center items-start mt-3 w-4/6 h-2/6">
+        <label class="text-lg" for="username">Username*</label>
+        <input
+          id="username"
+          type="text"
+          formControlName="username"
+          class="py-5 text-xl outline-0 bg-inherit w-[100%] h-1/6 border-b border-solid border-gray-400"
+        />
+      </div>
+      <div class="flex flex-col justify-center items-start w-4/6 h-2/6">
+        <label class="text-lg" for="password">Password*</label>
+        <input
+          id="password"
+          type="password"
+          formControlName="password"
+          class="py-5 text-xl outline-0 bg-inherit w-[100%] h-1/6 border-b border-solid border-gray-400"
+        />
+      </div>
+      <div class="flex justify-center items-center w-4/6 h-2/6">
+        <input
+          class="text-lg bg-[#95C9EE] hover:bg-[#b3d4ec] text-white cursor-pointer py-3 px-6 rounded-md"
+          name="login"
+          type="submit"
+          (ngSubmit)="onSubmit()"
+          value="Connexion"
+        />
+      </div>
+    </form>
+  </div>
+</div>

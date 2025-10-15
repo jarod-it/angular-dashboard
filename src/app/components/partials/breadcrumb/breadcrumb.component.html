@@ -1,0 +1,18 @@
+<div class="bg-[#ECF4FE]">
+    <div class="ml-[50px] w-[fit-content] px-3 py-4 rounded mr-4">
+        <a 
+            [routerLink]="['/']"
+            *ngIf="getRoute()[0][0]"
+        >
+            <span class="text-blue-400 underline">accueil</span>
+            <span> > </span>
+        </a>
+        <a
+            *ngFor="let navElement of getRoute()[0]; index as i"
+            [routerLink]="['/' + getRoute()[1][i]]"
+        >
+            <span class="text-blue-400 underline">{{ navElement }}</span>
+            <span *ngIf="i + 1 < getRoute()[1].length"> > </span>
+        </a>
+    </div>
+</div>

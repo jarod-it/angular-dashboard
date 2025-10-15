@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .glassy {
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .bg-main-gradient {
+    background: linear-gradient(
+      90deg,
+      rgba(240, 196, 221, 1) 0%,
+      rgba(164, 149, 205, 1) 35%,
+      rgba(150, 201, 238, 1) 100%
+    );
+  }
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: gray;
+}

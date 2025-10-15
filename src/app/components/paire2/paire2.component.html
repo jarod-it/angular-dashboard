@@ -1,0 +1,19 @@
+<div class="py-4 flex flex-col w-screen h-screen items-center bg-[#ECF4FE]">
+    <h2 class="mt-[10%]">Choisissez votre offre pour la deuxième paire</h2>
+    <div class="flex justify-around items-center h-[60%] w-[80%]">
+        <a
+            class="flex flex-col justify-center items-center border border-gray-300 rounded-xl shadow-xl h-[fit-content] hover:shadow-[inherit]"
+            [routerLink]="['/paire2/unifocaux']"
+        >
+            <h2 class="mt-5">Unifocaux</h2>
+            <img src="assets/img/glasses-unifocaux.png" alt="">
+        </a>
+        <a
+            class="flex flex-col justify-center items-center border border-gray-300 rounded-xl shadow-xl h-[fit-content] hover:shadow-[inherit]"
+            [routerLink]="['/paire2/progressifs']"    
+        >
+            <h2 class="mt-5">Progressifs</h2>
+            <img src="assets/img/glasses-progressifs.png" alt="">
+        </a>
+    </div>
+</div>
