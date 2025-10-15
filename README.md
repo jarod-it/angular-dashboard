@@ -1,4 +1,4 @@
-# Dashboard
+# 🔒 Angular Dashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
 
@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# ✨ Fonctionnalités
+
+- 🛡️ Authentification sécurisée (login / inscription)
+- 👤 Gestion des profils utilisateurs
+- 🏢 Espace administrateur pour gérer les utilisateurs et leurs permissions
+- 🔑 Gestion des rôles et droits d’accès
+- ⚡ Architecture modulaire Angular avec services, composants et guards
+
+# 🧑‍💻 Auteur
+
+- 👤 Jarod Rossini
+- 📫 rossini.jarod@gmail.com
+- 🌐 www.linkedin.com/in/jarod-rossini
